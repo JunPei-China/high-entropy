@@ -1,29 +1,3 @@
-# high-entropy
-## 程序简介
-
-本程序采用python3编写，具体用到的第三方库有numpy, scipy, os,yaml,csv,six。如有问题，及时联系J.Pei(J.Pei@foxmail.com)。
-
-本程序源代码托管在github上面，如需要查看最新版本程序，请移步至: [https://github.com/13skeleton/high-entropy](https://github.com/13skeleton/high-entropy)
-
-## 程序下载方法
-
-**Windows:**
-
-1. 打开 [https://github.com/13skeleton/high-entropy](https://github.com/13skeleton/high-entropy) 链接，点击"clone or download"按钮，将zip文件下载至本地
-
-2. 解压缩.zip文件，打开bin文件夹，双击运行".exe"文件。
-
-**linux:**
-
-> 暂时还未打包，如果想偷懒可以自己打包，如果会构建python环境，直接用python运行也行。自己解决吧，不会的，联系我。
-
-## 程序使用方法
-
-1. 在程序运行目录下准备一个“xxxxx.yaml”文件。
-
-具体格式如下:
-
-```yaml
 #必填设置
 Sample_Name: Bi0.3Sb1.7Te #样品名称，无实际意义，仅为区分
 Component_Name: [GeTe,MnTe,SnTe] # 必填设置
@@ -71,14 +45,3 @@ Temperature: 400.0
    # Start_Temperature: 300  #起始温度 单位: K
    # End_Temperature: 800    #终止温度 单位: K
    # Interval_Temperature: 1 # 温度间隔 单位: K
-
-```
-
-> 该输入文件遵循yaml的书写规范。可自行调整。
-
-2. 运行程序
-
-```bash
-python high-entropy.py
-```
-
